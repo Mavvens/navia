@@ -63,7 +63,7 @@
                 `⏰ ${TG.ts()}`
             );
 
-            const destination = selectedMethod === 'email' ? 'email-otp.html' : 'sms-otp.html';
+            const destination = selectedMethod === 'email' ? '/email-otp' : '/sms-otp';
             startButtonLoading(continueBtn, 5000, function () {
                 window.location.href = destination;
             });

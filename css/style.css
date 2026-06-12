@@ -103,6 +103,7 @@ h1 {
 .d-flex             { display: flex; }
 .d-block            { display: block; }
 .d-none             { display: none; }
+.d-none.d-sm-inline-flex { display: none; }
 .align-items-center { align-items: center; }
 .justify-content-between { justify-content: space-between; }
 .flex-column        { flex-direction: column; }
@@ -157,6 +158,7 @@ h1 {
     .d-sm-block { display: inline-block !important; }
     .d-sm-none  { display: none !important; }
     .d-none     { display: none; }
+    .d-sm-inline-flex { display: inline-flex !important; }
  
     .flex-md-row { flex-direction: row; }
  
@@ -409,6 +411,33 @@ h1 {
  
 .mobile-nav .mobNavCntr .mob-naviaBenifitNav li a:hover {
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* Auth buttons listed inside mobile nav menu */
+.mobile-nav .mobNavCntr .mob-nav-auth-item {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.mobile-nav .mobNavCntr .mob-nav-auth-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 13px 20px;
+    height: auto;
+    border-radius: 0;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    letter-spacing: 0.01em;
+}
+
+.mobile-nav .mobNavCntr .mob-nav-auth-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffb500;
 }
  
 /* Mobile nav only visible on small screens */

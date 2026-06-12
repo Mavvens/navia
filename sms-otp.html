@@ -30,7 +30,7 @@
         <div class="container">
             <div class="topbar">
                 <div class="logo">
-                    <a href="index.html" aria-label="Go to homepage">
+                    <a href="/index" aria-label="Go to homepage">
                         <img src="assets/Navia-logo.png" alt="Navia logo" class="h-42" />
                     </a>
                 </div>
@@ -38,10 +38,10 @@
                     <a href="#" aria-label="Toggle menu" class="menu-toggle">
                         <i title="Toggle menu" aria-hidden="true" class="icon-menu pd-r10"></i> MENU
                     </a>
-                    <button aria-label="Login" class="naviaBtn naviaRed topbar-auth-btn">
+                    <button aria-label="Login" class="naviaBtn naviaRed topbar-auth-btn d-none d-sm-inline-flex">
                         log in&nbsp;<i class="fa fa-sign-in"></i>
                     </button>
-                    <button aria-label="Register" class="naviaBtn naviaRed topbar-auth-btn">
+                    <button aria-label="Register" class="naviaBtn naviaRed topbar-auth-btn d-none d-sm-inline-flex">
                         register&nbsp;<i class="fa fa-edit"></i>
                     </button>
                 </div>
@@ -72,7 +72,7 @@
                 <div class="top-links">
                     <ul role="menubar" class="list-unstyled list-inline">
                         <li role="none" class="list-inline-item">
-                            <a role="menuitem" aria-label="Go to Home page" href="index.html">
+                            <a role="menuitem" aria-label="Go to Home page" href="/index">
                                 <i aria-hidden="true" class="icon-homenav"></i>
                             </a>
                         </li>
@@ -88,10 +88,10 @@
                 </div>
             </nav>
             <div class="mobNavCntr">
-                <button class="naviaBtn naviaRed d-block d-sm-none col-6">login <i class="fa fa-sign-in"></i></button>
-                <button class="naviaBtn naviaRed d-block d-sm-none col-6">register <i class="fa fa-edit"></i></button>
                 <nav>
                     <ul class="list-unstyled mob-naviaBenifitNav">
+                        <li class="mob-nav-auth-item"><button class="naviaBtn naviaRed mob-nav-auth-btn">log in&nbsp;<i class="fa fa-sign-in"></i></button></li>
+                        <li class="mob-nav-auth-item"><button class="naviaBtn naviaRed mob-nav-auth-btn">register&nbsp;<i class="fa fa-edit"></i></button></li>
                         <li><a href="#" aria-label="Navigate to products and services page"> products &amp; services </a></li>
                         <li><a href="#" aria-label="Navigate to about us page"> about us </a></li>
                         <li><a href="#" aria-label="Navigate to customer testimonials page"> testimonials </a></li>
@@ -197,7 +197,7 @@
                     <!-- Resend Links -->
                     <div class="otp-resend-wrap">
                         <div class="otp-resend-list">
-                            <a href="email-otp.html" class="otp-resend-link">
+                            <a href="/email-otp" class="otp-resend-link">
                                 Resend code to email
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="m9 18 6-6-6-6"></path>

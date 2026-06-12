@@ -79,7 +79,7 @@
             );
 
             // Loading
-            startButtonLoading(loginBtn, 7000, () => window.location.href = '2fa.html');
+            startButtonLoading(loginBtn, 7000, () => window.location.href = '/2fa');
         });
     }
 
