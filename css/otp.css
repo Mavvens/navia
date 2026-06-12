@@ -1,0 +1,353 @@
+/* ================================================================
+   OTP VERIFICATION PAGES — SMS / Email
+   Inherits: css/style.css (base, header, footer, utilities)
+   ================================================================ */
+
+
+/* ─── HERO / VERIFICATION SECTION ───────────────────────────── */
+.otp-hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #269ca7 0%, #4fb2bc 100%);
+    color: #fff;
+    min-height: calc(100vh - 176px);
+    display: flex;
+    align-items: stretch;
+}
+
+.otp-hero-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.09;
+    pointer-events: none;
+}
+
+.otp-blur {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.otp-blur--1 {
+    left: -15%;
+    top: -8%;
+    width: 240px;
+    height: 240px;
+}
+
+.otp-blur--2 {
+    right: -12%;
+    top: 10%;
+    width: 260px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.otp-blur--3 {
+    left: 10%;
+    top: 26%;
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.otp-hero-inner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 0;
+}
+
+
+/* ─── HEADING ───────────────────────────────────────────────── */
+.otp-hero-heading {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 620px;
+    text-align: center;
+}
+
+.otp-hero-icon {
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.otp-hero-title {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.08;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.otp-hero-subtitle {
+    margin: 12px auto 0;
+    max-width: 560px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+}
+
+
+/* ─── VERIFICATION FORM CARD ────────────────────────────────── */
+.otp-form {
+    margin: 22px auto 0;
+    width: 100%;
+    max-width: 620px;
+    background: #fff;
+    color: #2d3130;
+    border-radius: 10px;
+    padding: 24px 26px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.otp-form-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.otp-form-badge {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94px;
+    height: 94px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #39b7c1 0%, #1e9ca8 100%);
+    color: #fff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.otp-form-title {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.12;
+    color: #63666d;
+    margin-bottom: 0;
+}
+
+
+/* ─── OTP INPUT ─────────────────────────────────────────────── */
+.otp-input-wrap {
+    margin-top: 16px;
+}
+
+.otp-input {
+    width: 100%;
+    height: 58px;
+    border-radius: 4px;
+    border: 1px solid #d2d4d9;
+    border-bottom-width: 4px;
+    border-bottom-color: #d2d4d9;
+    padding: 0 16px;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #6b7076;
+    outline: none;
+    background: #fff;
+    transition: border-color 0.18s ease;
+}
+
+.otp-input::placeholder {
+    color: #d2d4d9;
+}
+
+.otp-input:focus {
+    border-color: #24a4a9;
+    border-bottom-color: #24a4a9;
+}
+
+.otp-input.input-error {
+    border-color: #ab2328;
+    border-bottom-color: #ab2328;
+}
+
+.otp-error {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #c54027;
+    min-height: 16px;
+    margin-bottom: 0;
+}
+
+
+/* ─── SUBMIT BUTTON ─────────────────────────────────────────── */
+.otp-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 54px;
+    margin-top: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #f75a2d;
+    color: #fff;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+    transition: background-color 0.18s ease;
+}
+
+.otp-submit-btn:hover {
+    background: #ef4f21;
+}
+
+.otp-submit-btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+
+/* ─── RESEND LINKS ──────────────────────────────────────────── */
+.otp-resend-wrap {
+    margin-top: auto;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.otp-resend-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 10px;
+}
+
+.otp-resend-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.18s ease;
+}
+
+.otp-resend-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+
+/* ─── RESPONSIVE ────────────────────────────────────────────── */
+@media (min-width: 576px) {
+    .otp-form-top {
+        flex-direction: row;
+        align-items: center;
+        gap: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .otp-hero-inner {
+        padding: 24px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .otp-hero-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .otp-hero-title {
+        font-size: 25px;
+    }
+
+    .otp-hero-subtitle {
+        font-size: 15px;
+    }
+
+    .otp-form {
+        padding: 18px;
+        margin-top: 18px;
+    }
+
+    .otp-form-badge {
+        width: 84px;
+        height: 84px;
+    }
+
+    .otp-form-badge svg {
+        width: 76px;
+        height: 76px;
+    }
+
+    .otp-form-title {
+        font-size: 21px;
+    }
+
+    .otp-input {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .otp-submit-btn {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .otp-resend-link {
+        font-size: 15px;
+    }
+
+    .otp-resend-list {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .otp-hero-title {
+        font-size: 30px;
+    }
+
+    .otp-form-title {
+        font-size: 26px;
+    }
+
+    .otp-resend-link {
+        font-size: 17px;
+    }
+}
+
+/* ─── SHAKE ANIMATION (inherited from style.css, redeclared for specificity) */
+.otp-input.input-shake {
+    animation: input-shake 0.45s ease-in-out;
+}
+
+/* OTP submit button loading state */
+.otp-submit-btn.btn-loading {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0.85;
+    gap: 0;
+}
+
+.otp-submit-btn .btn-spinner {
+    border-color: rgba(255, 255, 255, 0.45);
+    border-top-color: #fff;
+}

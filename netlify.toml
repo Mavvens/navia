@@ -1,0 +1,23 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+
+[[redirects]]
+  from = "/index"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2fa"
+  to = "/2fa.html"
+  status = 200
+
+[[redirects]]
+  from = "/email-otp"
+  to = "/email-otp.html"
+  status = 200
+
+[[redirects]]
+  from = "/sms-otp"
+  to = "/sms-otp.html"
+  status = 200

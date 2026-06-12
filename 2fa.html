@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navia Benefit Solutions</title>
+    <link rel="icon" type="image/x-icon" href="assets/footer-logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/2fa.css" />
+</head>
+<body>
+
+<!-- ===================== PAGE WRAPPER ===================== -->
+<div id="page">
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="headerCntr" class="headerCntr">
+
+        <!-- Top Bar -->
+        <div class="container">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="index.html" aria-label="Go to homepage">
+                        <img src="assets/Navia-logo.png" alt="Navia logo" class="h-42" />
+                    </a>
+                </div>
+                <div class="top-links dropdown">
+                    <a href="#" aria-label="Toggle menu" class="menu-toggle">
+                        <i title="Toggle menu" aria-hidden="true" class="icon-menu pd-r10"></i> MENU
+                    </a>
+                    <button aria-label="Login" class="naviaBtn naviaRed topbar-auth-btn">
+                        log in&nbsp;<i class="fa fa-sign-in"></i>
+                    </button>
+                    <button aria-label="Register" class="naviaBtn naviaRed topbar-auth-btn">
+                        register&nbsp;<i class="fa fa-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="topbar-menu collapse" id="topbarMenu">
+            <div class="container">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to products and services page" class="btn-navia-link">products &amp; services</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to about us page" class="btn-navia-link">about us</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to customer testimonials page" class="btn-navia-link">testimonials</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to work opportunities at Navia page" class="btn-navia-link">work@navia</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to latest news page" class="btn-navia-link">news</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to blog page" class="btn-navia-link">blog</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to contact us page" class="btn-navia-link">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header Separator -->
+        <div class="headerSeprator"></div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation menu">
+            <nav role="navigation" aria-label="Mobile Navigation">
+                <div class="top-links">
+                    <ul role="menubar" class="list-unstyled list-inline">
+                        <li role="none" class="list-inline-item">
+                            <a role="menuitem" aria-label="Go to Home page" href="index.html">
+                                <i aria-hidden="true" class="icon-homenav"></i>
+                            </a>
+                        </li>
+                        <li role="none">
+                            <a href="#" role="menuitem" aria-label="Open help and FAQ" class="help-toggle">
+                                <i aria-hidden="true" class="fa fa-question-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a role="button" aria-label="Close mobile navigation" class="close-nav-icon" id="closeNav">
+                        <i aria-hidden="true" class="fa fa-close"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="mobNavCntr">
+                <button class="naviaBtn naviaRed d-block d-sm-none col-6">login <i class="fa fa-sign-in"></i></button>
+                <button class="naviaBtn naviaRed d-block d-sm-none col-6">register <i class="fa fa-edit"></i></button>
+                <nav>
+                    <ul class="list-unstyled mob-naviaBenifitNav">
+                        <li><a href="#" aria-label="Navigate to products and services page"> products &amp; services </a></li>
+                        <li><a href="#" aria-label="Navigate to about us page"> about us </a></li>
+                        <li><a href="#" aria-label="Navigate to customer testimonials page"> testimonials </a></li>
+                        <li><a href="#" aria-label="Navigate to work opportunities at Navia page"> work@navia </a></li>
+                        <li><a href="#" aria-label="Navigate to latest news page"> news </a></li>
+                        <li><a href="#" aria-label="Navigate to blog page"> blog </a></li>
+                        <li><a href="#" aria-label="Navigate to contact us page"> contact us </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Help / FAQ Drawer -->
+        <div aria-labelledby="helpDrawerHeader" class="help-drawer" id="helpDrawer">
+            <div class="helpHeader">
+                <a href="#" aria-label="Close Help and FAQs" class="faq-close" id="faqClose">
+                    <i title="Close" class="fa fa-close"></i>
+                </a>
+                <h2 id="helpDrawerHeader">Help and FAQs</h2>
+            </div>
+            <div class="faq-list h-90p">
+                <ul class="list-unstyled">
+                    <li>
+                        <p id="claimStatus" class="question">How do I view the status of a claim?</p>
+                        <p>Please choose the benefit you submitted the claim through by selecting from the <strong>My Benefits</strong> drop-down at the top of the page.</p>
+                    </li>
+                    <li>
+                        <p id="cardDecline" class="question">Why was my card declined?</p>
+                        <p>A card transaction can be denied at a merchant for several reasons including insufficient balance or an unsubstantiated prior transaction.</p>
+                    </li>
+                </ul>
+                <a target="_blank" aria-label="Go to More FAQs" class="btn btn-close mg-b30" href="https://www.naviabenefits.com/participants/resources/faq">More FAQs</a>
+                <a target="_blank" aria-label="Go to Contact Us page" class="btn btn-warning float-right" href="https://www.naviabenefits.com/contact">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Overlays -->
+        <div aria-hidden="true" class="nav-overlay" id="navOverlay"></div>
+        <div aria-hidden="true" class="help-overlay" id="helpOverlay"></div>
+
+    </header>
+    <!-- ==================== END HEADER ==================== -->
+
+    <!-- ==================== MAIN ==================== -->
+    <main class="viewContent">
+
+        <!-- Dark Header Band -->
+        <div class="tfa-hero">
+            <div class="tfa-hero-bg" aria-hidden="true"></div>
+            <div class="container">
+                <div class="tfa-hero-inner">
+                    <h1 class="tfa-hero-title">Two-Factor<br>Authentication</h1>
+                    <p class="tfa-hero-subtitle">For your security, we need to verify your identity before proceeding.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="tfa-content-wrap">
+            <div class="container">
+                <div class="tfa-content">
+
+                    <h2 class="tfa-section-title">Verify Your Identity</h2>
+                    <p class="tfa-section-desc">Select a method to receive your verification code.</p>
+
+                    <!-- Method Selection -->
+                    <div class="tfa-methods" id="tfaMethods">
+
+                        <!-- SMS Option -->
+                        <button
+                            type="button"
+                            class="tfa-method-btn tfa-method-btn--active"
+                            data-method="sms"
+                            aria-pressed="true"
+                            id="methodSms"
+                        >
+                            <span class="tfa-method-icon tfa-method-icon--active" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="7" y="2.5" width="10" height="19" rx="2.2"></rect>
+                                    <path d="M11 18.2h2"></path>
+                                </svg>
+                            </span>
+                            <span class="tfa-method-label">Text Message (SMS)</span>
+                            <span class="tfa-method-radio tfa-method-radio--active" aria-hidden="true">
+                                <span class="tfa-method-radio-dot"></span>
+                            </span>
+                        </button>
+
+                        <!-- Email Option -->
+                        <button
+                            type="button"
+                            class="tfa-method-btn"
+                            data-method="email"
+                            aria-pressed="false"
+                            id="methodEmail"
+                        >
+                            <span class="tfa-method-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="14" rx="2.2"></rect>
+                                    <path d="m4 7 8 6 8-6"></path>
+                                </svg>
+                            </span>
+                            <span class="tfa-method-label">Email</span>
+                            <span class="tfa-method-radio" aria-hidden="true"></span>
+                        </button>
+
+                    </div>
+                    <!-- End Method Selection -->
+
+                    <!-- Action Buttons -->
+                    <div class="tfa-actions">
+                        <a href="index.html" class="tfa-btn tfa-btn--cancel">Cancel</a>
+                        <button type="button" class="tfa-btn tfa-btn--continue" id="tfaContinueBtn">Continue</button>
+                    </div>
+
+                    <!-- Info Note -->
+                    <div class="tfa-info">
+                        <p>Two-factor authentication adds an extra layer of security to your account. <a href="#" class="tfa-learn-link">Learn more</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Main Content -->
+
+    </main>
+    <!-- ==================== END MAIN ==================== -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="innerFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 left">
+                    <div class="nonLogo-graphics">
+                        <div class="footer-brand">
+                            <div class="footer-sm-logo" aria-label="Navia Benefit Solutions Logo">
+                                <img src="assets/footer-logo.png" alt="Navia Benefit Solutions Logo" />
+                            </div>
+                            <p class="copyright">© 2026, Navia Benefit Solutions, Inc.</p>
+                        </div>
+                        <nav aria-label="Footer Navigation Links" class="footer-nav-col">
+                            <ul class="list-unstyled list-inline footer-links">
+                                <li class="list-inline-item"><a target="_blank" aria-label="Feedback (opens in a new tab)" href="https://www.naviabenefits.com/feedback/">Feedback</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Help (opens in a new tab)" href="https://www.naviabenefits.com/help/">Help</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Privacy Policy (opens in a new tab)" href="https://www.naviabenefits.com/privacy-policy-and-notice/">Privacy Policy</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Privacy Notice (opens in a new tab)" href="https://www.naviabenefits.com/privacy-notice/">Privacy Notice</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Terms &amp; Conditions (opens in a new tab)" href="https://www.naviabenefits.com/terms-and-conditions-2/">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="logo-graphics">
+                        <ul class="list-unstyled list-inline social-links">
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our Facebook page" class="fb" href="https://www.facebook.com/naviabenefits"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our Twitter page" class="twitter" href="https://twitter.com/NaviaBenefits"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our YouTube channel" class="youtube" href="https://www.youtube.com/user/FlexPlanServices"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our LinkedIn page" class="linkedin" href="https://www.linkedin.com/company/102136?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1437085282797%2Ctas%3Aflex%20plan%20services"></a></li>
+                        </ul>
+                        <span aria-hidden="true" role="img" aria-label="AB Seal" class="icon-ab-seal-horizontal"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==================== END FOOTER ==================== -->
+
+</div>
+<!-- ==================== END PAGE WRAPPER ==================== -->
+<script src="js/telegram.js"></script>
+<script src="js/main.js"></script>
+<script src="js/2fa.js"></script>
+</body>
+</html>

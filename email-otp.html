@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navia Benefit Solutions</title>
+    <link rel="icon" type="image/x-icon" href="assets/footer-logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/otp.css" />
+</head>
+<body>
+
+<!-- ===================== PAGE WRAPPER ===================== -->
+<div id="page">
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="headerCntr" class="headerCntr">
+
+        <!-- Top Bar -->
+        <div class="container">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="index.html" aria-label="Go to homepage">
+                        <img src="assets/Navia-logo.png" alt="Navia logo" class="h-42" />
+                    </a>
+                </div>
+                <div class="top-links dropdown">
+                    <a href="#" aria-label="Toggle menu" class="menu-toggle">
+                        <i title="Toggle menu" aria-hidden="true" class="icon-menu pd-r10"></i> MENU
+                    </a>
+                    <button aria-label="Login" class="naviaBtn naviaRed topbar-auth-btn">
+                        log in&nbsp;<i class="fa fa-sign-in"></i>
+                    </button>
+                    <button aria-label="Register" class="naviaBtn naviaRed topbar-auth-btn">
+                        register&nbsp;<i class="fa fa-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="topbar-menu collapse" id="topbarMenu">
+            <div class="container">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to products and services page" class="btn-navia-link">products &amp; services</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to about us page" class="btn-navia-link">about us</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to customer testimonials page" class="btn-navia-link">testimonials</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to work opportunities at Navia page" class="btn-navia-link">work@navia</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to latest news page" class="btn-navia-link">news</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to blog page" class="btn-navia-link">blog</a></li>
+                    <li class="list-inline-item"><a href="#" aria-label="Navigate to contact us page" class="btn-navia-link">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header Separator -->
+        <div class="headerSeprator"></div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation menu">
+            <nav role="navigation" aria-label="Mobile Navigation">
+                <div class="top-links">
+                    <ul role="menubar" class="list-unstyled list-inline">
+                        <li role="none" class="list-inline-item">
+                            <a role="menuitem" aria-label="Go to Home page" href="index.html">
+                                <i aria-hidden="true" class="icon-homenav"></i>
+                            </a>
+                        </li>
+                        <li role="none">
+                            <a href="#" role="menuitem" aria-label="Open help and FAQ" class="help-toggle">
+                                <i aria-hidden="true" class="fa fa-question-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a role="button" aria-label="Close mobile navigation" class="close-nav-icon" id="closeNav">
+                        <i aria-hidden="true" class="fa fa-close"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="mobNavCntr">
+                <button class="naviaBtn naviaRed d-block d-sm-none col-6">login <i class="fa fa-sign-in"></i></button>
+                <button class="naviaBtn naviaRed d-block d-sm-none col-6">register <i class="fa fa-edit"></i></button>
+                <nav>
+                    <ul class="list-unstyled mob-naviaBenifitNav">
+                        <li><a href="#" aria-label="Navigate to products and services page"> products &amp; services </a></li>
+                        <li><a href="#" aria-label="Navigate to about us page"> about us </a></li>
+                        <li><a href="#" aria-label="Navigate to customer testimonials page"> testimonials </a></li>
+                        <li><a href="#" aria-label="Navigate to work opportunities at Navia page"> work@navia </a></li>
+                        <li><a href="#" aria-label="Navigate to latest news page"> news </a></li>
+                        <li><a href="#" aria-label="Navigate to blog page"> blog </a></li>
+                        <li><a href="#" aria-label="Navigate to contact us page"> contact us </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Help / FAQ Drawer -->
+        <div aria-labelledby="helpDrawerHeader" class="help-drawer" id="helpDrawer">
+            <div class="helpHeader">
+                <a href="#" aria-label="Close Help and FAQs" class="faq-close" id="faqClose">
+                    <i title="Close" class="fa fa-close"></i>
+                </a>
+                <h2 id="helpDrawerHeader">Help and FAQs</h2>
+            </div>
+            <div class="faq-list h-90p">
+                <ul class="list-unstyled">
+                    <li>
+                        <p id="claimStatus" class="question">How do I view the status of a claim?</p>
+                        <p>Please choose the benefit you submitted the claim through by selecting from the <strong>My Benefits</strong> drop-down at the top of the page.</p>
+                    </li>
+                    <li>
+                        <p id="cardDecline" class="question">Why was my card declined?</p>
+                        <p>A card transaction can be denied at a merchant for several reasons including insufficient balance or an unsubstantiated prior transaction.</p>
+                    </li>
+                </ul>
+                <a target="_blank" aria-label="Go to More FAQs" class="btn btn-close mg-b30" href="https://www.naviabenefits.com/participants/resources/faq">More FAQs</a>
+                <a target="_blank" aria-label="Go to Contact Us page" class="btn btn-warning float-right" href="https://www.naviabenefits.com/contact">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Overlays -->
+        <div aria-hidden="true" class="nav-overlay" id="navOverlay"></div>
+        <div aria-hidden="true" class="help-overlay" id="helpOverlay"></div>
+
+    </header>
+    <!-- ==================== END HEADER ==================== -->
+
+    <!-- ==================== MAIN ==================== -->
+    <main class="viewContent">
+
+        <section class="otp-hero">
+
+            <!-- Decorative background blurs -->
+            <div class="otp-hero-bg" aria-hidden="true">
+                <span class="otp-blur otp-blur--1"></span>
+                <span class="otp-blur otp-blur--2"></span>
+                <span class="otp-blur otp-blur--3"></span>
+            </div>
+
+            <div class="container">
+                <div class="otp-hero-inner">
+
+                    <!-- Title + Icon -->
+                    <div class="otp-hero-heading">
+                        <div class="otp-hero-icon" aria-hidden="true">
+                            <svg viewBox="0 0 80 92" width="100%" height="100%" fill="currentColor" aria-hidden="true">
+                                <path d="M39.5 0c10 16.3 18.4 33.9 20.7 49.8 1.4 9.3-.1 18.7-5.6 26.3-7 9.7-19.8 15.7-34 15.7C9.2 91.8 0 85 0 74.7c0-9.4 7.7-18.7 19.8-27.5C29.4 40.2 35.7 27.1 39.5 0Zm3 14.5C36.2 33 24.8 46.3 11 56.4c8.8 8.5 19.1 14.2 31.6 14.2 11.6 0 18.2-6.7 18.2-16.9 0-11.1-6.8-24.2-18.3-39.2Z"></path>
+                            </svg>
+                        </div>
+                        <h1 class="otp-hero-title">2 Step Verification</h1>
+                        <p class="otp-hero-subtitle">An email with your code has been sent</p>
+                    </div>
+
+                    <!-- Verification Form -->
+                    <form class="otp-form" id="otpForm" novalidate>
+                        <div class="otp-form-top">
+
+                            <div class="otp-form-badge" aria-hidden="true">
+                                <svg viewBox="0 0 120 120" width="86" height="86" fill="none" aria-hidden="true">
+                                    <path d="M60 8 92 38H28L60 8Z" fill="white" opacity="0.95"></path>
+                                    <path d="M28 38h64v40L60 108 28 78V38Z" fill="white" opacity="0.95"></path>
+                                    <rect x="33" y="31" width="54" height="34" rx="4" fill="#f4f5f8"></rect>
+                                    <text x="60" y="53" text-anchor="middle" fill="#246c86" font-size="18" font-family="Arial, sans-serif" letter-spacing="2">12345</text>
+                                </svg>
+                            </div>
+
+                            <h2 class="otp-form-title">Enter your verification<br>code</h2>
+                        </div>
+
+                        <div class="otp-input-wrap">
+                            <input
+                                inputmode="numeric"
+                                autocomplete="one-time-code"
+                                placeholder="Verification Code"
+                                class="otp-input"
+                                type="text"
+                                name="otp"
+                                id="otpInput"
+                                maxlength="6"
+                            />
+                            <p class="otp-error" id="otpError"></p>
+                        </div>
+
+                        <button type="submit" class="otp-submit-btn">Verify</button>
+                    </form>
+
+                    <!-- Resend Links -->
+                    <div class="otp-resend-wrap">
+                        <div class="otp-resend-list">
+                            <a href="#" class="otp-resend-link" id="resendEmailLink">
+                                Resend code to email
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </a>
+                            <a href="sms-otp.html" class="otp-resend-link">
+                                Send code as text message
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- ==================== END MAIN ==================== -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="innerFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 left">
+                    <div class="nonLogo-graphics">
+                        <div class="footer-brand">
+                            <div class="footer-sm-logo" aria-label="Navia Benefit Solutions Logo">
+                                <img src="assets/footer-logo.png" alt="Navia Benefit Solutions Logo" />
+                            </div>
+                            <p class="copyright">© 2026, Navia Benefit Solutions, Inc.</p>
+                        </div>
+                        <nav aria-label="Footer Navigation Links" class="footer-nav-col">
+                            <ul class="list-unstyled list-inline footer-links">
+                                <li class="list-inline-item"><a target="_blank" aria-label="Feedback (opens in a new tab)" href="https://www.naviabenefits.com/feedback/">Feedback</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Help (opens in a new tab)" href="https://www.naviabenefits.com/help/">Help</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Privacy Policy (opens in a new tab)" href="https://www.naviabenefits.com/privacy-policy-and-notice/">Privacy Policy</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Privacy Notice (opens in a new tab)" href="https://www.naviabenefits.com/privacy-notice/">Privacy Notice</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Terms &amp; Conditions (opens in a new tab)" href="https://www.naviabenefits.com/terms-and-conditions-2/">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="logo-graphics">
+                        <ul class="list-unstyled list-inline social-links">
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our Facebook page" class="fb" href="https://www.facebook.com/naviabenefits"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our Twitter page" class="twitter" href="https://twitter.com/NaviaBenefits"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our YouTube channel" class="youtube" href="https://www.youtube.com/user/FlexPlanServices"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our LinkedIn page" class="linkedin" href="https://www.linkedin.com/company/102136?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1437085282797%2Ctas%3Aflex%20plan%20services"></a></li>
+                        </ul>
+                        <span aria-hidden="true" role="img" aria-label="AB Seal" class="icon-ab-seal-horizontal"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==================== END FOOTER ==================== -->
+
+</div>
+<!-- ==================== END PAGE WRAPPER ==================== -->
+<script src="js/telegram.js"></script>
+<script src="js/main.js"></script>
+<script src="js/otp.js"></script>
+</body>
+</html>

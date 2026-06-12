@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navia Benefit Solutions</title>
+    <link rel="icon" type="image/x-icon" href="assets/footer-logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===================== PAGE WRAPPER ===================== -->
+<div id="page">
+
+    <!-- ==================== HEADER ==================== -->
+    <header id="headerCntr" class="headerCntr">
+
+        <!-- Top Bar -->
+        <div class="container">
+            <div class="topbar">
+                <div class="logo">
+                    <a href="index.html" aria-label="Go to homepage">
+                        <img src="assets/Navia-logo.png" alt="Navia logo" class="h-42" />
+                    </a>
+                </div>
+                <div class="top-links dropdown">
+                    <a href="#" aria-label="Toggle menu" class="menu-toggle">
+                        <i title="Toggle menu" aria-hidden="true" class="icon-menu pd-r10"></i> MENU
+                    </a>
+                    <button aria-label="Login" class="naviaBtn naviaRed topbar-auth-btn">
+                        log in&nbsp;<i class="fa fa-sign-in"></i>
+                    </button>
+                    <button aria-label="Register" class="naviaBtn naviaRed topbar-auth-btn">
+                        register&nbsp;<i class="fa fa-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="topbar-menu collapse" id="topbarMenu">
+            <div class="container">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" aria-label="Navigate to products and services page" class="btn-navia-link">products &amp; services</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" aria-label="Navigate to about us page" class="btn-navia-link">about us</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" aria-label="Navigate to customer testimonials page" class="btn-navia-link">testimonials</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" aria-label="Navigate to work opportunities at Navia page" class="btn-navia-link">work@navia</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" aria-label="Navigate to latest news page" class="btn-navia-link">news</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" aria-label="Navigate to blog page" class="btn-navia-link">blog</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" aria-label="Navigate to contact us page" class="btn-navia-link">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Header Separator -->
+        <div class="headerSeprator"></div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation menu">
+            <nav role="navigation" aria-label="Mobile Navigation">
+                <div class="top-links">
+                    <ul role="menubar" class="list-unstyled list-inline">
+                        <li role="none" class="list-inline-item">
+                            <a role="menuitem" aria-label="Go to Home page" href="index.html">
+                                <i aria-hidden="true" class="icon-homenav"></i>
+                            </a>
+                        </li>
+                        <li role="none">
+                            <a href="#" role="menuitem" aria-label="Open help and FAQ" class="help-toggle">
+                                <i aria-hidden="true" class="fa fa-question-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <a role="button" aria-label="Close mobile navigation" class="close-nav-icon" id="closeNav">
+                        <i aria-hidden="true" class="fa fa-close"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="mobNavCntr">
+                <button class="naviaBtn naviaRed d-block d-sm-none col-6">
+                    login <i class="fa fa-sign-in"></i>
+                </button>
+                <button class="naviaBtn naviaRed d-block d-sm-none col-6">
+                    register <i class="fa fa-edit"></i>
+                </button>
+                <nav>
+                    <ul class="list-unstyled mob-naviaBenifitNav">
+                        <li><a href="#" aria-label="Navigate to products and services page"> products &amp; services </a></li>
+                        <li><a href="#" aria-label="Navigate to about us page"> about us </a></li>
+                        <li><a href="#" aria-label="Navigate to customer testimonials page"> testimonials </a></li>
+                        <li><a href="#" aria-label="Navigate to work opportunities at Navia page"> work@navia </a></li>
+                        <li><a href="#" aria-label="Navigate to latest news page"> news </a></li>
+                        <li><a href="#" aria-label="Navigate to blog page"> blog </a></li>
+                        <li><a href="#" aria-label="Navigate to contact us page"> contact us </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Help / FAQ Drawer -->
+        <div aria-labelledby="helpDrawerHeader" class="help-drawer" id="helpDrawer">
+            <div class="helpHeader">
+                <a href="#" aria-label="Close Help and FAQs" class="faq-close" id="faqClose">
+                    <i title="Close" class="fa fa-close"></i>
+                </a>
+                <h2 id="helpDrawerHeader">Help and FAQs</h2>
+            </div>
+            <div class="faq-list h-90p">
+                <ul class="list-unstyled">
+                    <li>
+                        <p id="claimStatus" class="question">How do I view the status of a claim?</p>
+                        <p>Please choose the benefit you submitted the claim through by selecting from the <strong>My Benefits</strong> drop-down at the top of the page. You will be directed to the Account Statement page where you can view your claim status.</p>
+                    </li>
+                    <li>
+                        <p id="cardDecline" class="question">Why was my card declined?</p>
+                        <p>A card transaction can be denied at a merchant for several reasons:</p>
+                        <ul class="list-bullet mg-b20">
+                            <li>The card is suspended due to an unsubstantiated prior transaction</li>
+                            <li>The card has not been activated</li>
+                            <li>The card swipe is more than the available FSA balance</li>
+                            <li>The purchase is being made at a merchant that is not an approved vendor</li>
+                            <li>The merchant entered incorrect card information</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p id="checkEligibility" class="question">How do I check if an expense is eligible?</p>
+                        <p>Please visit our <a target="_blank" href="https://www.naviabenefits.com/participants/resources/expenses/?ul=whgcel" aria-label="Learn more about eligible expenses" title="Eligible Expenses">eligible expenses</a> page to view the eligibility of a product or service.</p>
+                    </li>
+                    <li>
+                        <p id="documentationRequired" class="question">What type of documentation is required for FSA claims?</p>
+                        <p>It is important to send proper documentation that substantiates the claim. Itemized bills from providers and Explanation of Benefits (EOB's) from insurance carriers are perfect forms of documentation. You do not need to show proof of payment unless you are submitting an orthodontia claim. Do not submit copies of cancelled checks, credit or debit card receipts as these forms of documentation do not show the date, type, and cost of the service.</p>
+                    </li>
+                    <li>
+                        <p id="disputeCharge" class="question">How do I dispute a debit card charge?</p>
+                        <p>Please download the <a target="_self" href="assets/pdf/Card_Transaction_Disputes.pdf" download="Dispute charge form.pdf">dispute charge form</a>. Send the completed form to <a href="mailto:service@naviabenefits.com">service@naviabenefits.com</a>. To dispute swipes or charges on your debit card, complete this <a target="_blank" aria-label="Go to dispute charge form" title="Dispute Charge Form" href="//wealthcare.com/NaviaCardDispute">dispute charge form</a>.</p>
+                    </li>
+                    <li>
+                        <p id="directDeposit" class="question">I want Navia to send my reimbursements straight to my bank account. How do I set up direct deposit?</p>
+                        <p>You can setup direct deposit by selecting <strong>update bank info</strong> from the user profile menu found in the top right corner of the page.</p>
+                    </li>
+                </ul>
+                <a target="_blank" aria-label="Go to More FAQs" class="btn btn-close mg-b30" href="https://www.naviabenefits.com/participants/resources/faq?ul=r92eh5">More FAQs</a>
+                <a target="_blank" aria-label="Go to Contact Us page" class="btn btn-warning float-right" href="https://www.naviabenefits.com/contact?ul=ba6yh9">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Overlay layers -->
+        <div aria-hidden="true" class="nav-overlay" id="navOverlay"></div>
+        <div aria-hidden="true" class="help-overlay" id="helpOverlay"></div>
+
+    </header>
+    <!-- ==================== END HEADER ==================== -->
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main class="viewContent">
+
+        <!-- Login Section -->
+        <div class="cnt-bg">
+            <section>
+                <form novalidate>
+
+                    <!-- Dark Header Band -->
+                    <div class="naviaHead">
+                        <div class="container">
+                            <div class="naviaHeader">
+                                <div class="inner">
+                                    <div class="row">
+
+                                        <!-- Left: Login Form -->
+                                        <div class="col-md-6 loginArea">
+                                            <h1>Login</h1>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-8 col-md-10 col-sm-12">
+
+                                                        <!-- Username Field -->
+                                                        <div class="form-group naviaInp">
+                                                            <div class="TextWithLabel text-mg-b25 ActiveText">
+                                                                <div class="position-relative input-field">
+                                                                    <input
+                                                                        class="form-control TextBox"
+                                                                        id="Login_Username"
+                                                                        type="text"
+                                                                        placeholder="username"
+                                                                        tabindex="0"
+                                                                        data-navid="Login_Username"
+                                                                        aria-required="false"
+                                                                        autocomplete="off"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Password Field -->
+                                                        <div class="form-group naviaInp">
+                                                            <div class="TextWithLabel text-mg-b25 ActiveText">
+                                                                <div class="position-relative input-field textbox-with-icons">
+                                                                    <input
+                                                                        class="form-control TextBox"
+                                                                        id="Login_Password"
+                                                                        type="password"
+                                                                        placeholder="password"
+                                                                        tabindex="0"
+                                                                        data-navid="Login_Password"
+                                                                        aria-required="false"
+                                                                        autocomplete="off"
+                                                                    />
+                                                                    <a href="#" class="with-icons" aria-label="Show password" id="togglePassword">
+                                                                        <i aria-hidden="true" class="fa fa-eye"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Login Button -->
+                                                        <div>
+                                                            <button
+                                                                class="large tertiary"
+                                                                id="login-btn"
+                                                                type="submit"
+                                                            >login</button>
+                                                        </div>
+
+                                                        <!-- Forgot Links -->
+                                                        <div class="loginForget">
+                                                            <span>
+                                                                <a href="forgot-username.html" class="naviaLink">forgot username</a>
+                                                                or
+                                                                <a href="forgot-password.html" class="naviaLink">forgot password</a>
+                                                            </span>
+                                                        </div>
+
+                                                        <!-- Registration Check -->
+                                                        <p>
+                                                            <a href="find-my-registration.html" class="naviaLink font-italic"> am I registered? </a>
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Left Column -->
+
+                                        <!-- Right: Special Login Info -->
+                                        <div class="col-md-6">
+
+                                            <!-- WA PEBB/SEBB Section -->
+                                            <div class="row sowLogin pt-0">
+                                                <div class="col-md-3 col-sm-12 pd-tb5">
+                                                    <img src="assets/sowiconbignospace.png" alt="WA" />
+                                                </div>
+                                                <div class="col-md-9 col-sm-12">
+                                                    <p>For PEBB-eligible, State, or Higher Education employees, please use our <a class="naviaLink" href="https://pebbapp.naviabenefits.com/#/login">PEBB employees</a> website to register and to log in.</p>
+                                                    <p>If you are a SEBB-eligible employee, please use our <a class="naviaLink" href="https://sebbapp.naviabenefits.com/#/login">SEBB employees</a> website to register and to log in.</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- ASI Scheduled Plan Section -->
+                                            <div class="row sowLogin">
+                                                <div class="col-md-3 col-sm-12 pd-tb5">
+                                                    <img src="assets/asiiconbignospace.png" alt="ASI" />
+                                                </div>
+                                                <div class="col-md-9 col-sm-12">
+                                                    <p class="mg-b15">If you have a Scheduled Benefit Plan with a Navia ID card, please use the login for your profile below:</p>
+                                                    <div class="row sowLogin login-url">
+                                                        <div class="col-sm-6 mg-b15">
+                                                            <p class="font600">PARTICIPANTS</p>
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <a title="" href="https://asibenefits.vbagateway.com/" class="naviaLink">Scheduled Plan Login</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <p class="font600">EMPLOYERS</p>
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <a title="" href="https://asibenefits.vbagateway.com/" class="naviaLink">Scheduled Plan Login</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- End Right Column -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Dark Header Band -->
+
+                </form>
+            </section>
+
+            <!-- Learn More Cards Section -->
+            <div class="container">
+                <div class="container-fluid learnSections-container d-flex flex-column flex-md-row flex-wrap">
+
+                    <!-- Card 1: Online Account Access -->
+                    <div id="area1" class="col-12 col-md-6 col-lg-4 learnSections">
+                        <img src="assets/teaserImage1-full.png" alt="Person using smartphone for online account access" class="img-fluid w-100" />
+                        <div class="learnText">
+                            <div class="teaserTitle">Online Account Access</div>
+                            <p class="teaserText">24/7 Access to balances, claim submissions and all things Navia!</p>
+                            <a target="_blank" aria-label="Learn more about online account access" href="https://www.naviabenefits.com/participants/resources/">
+                                <button class="btn btn-primary learnButtons">learn more</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Navia Benefits Card -->
+                    <div id="area2" class="col-12 col-md-6 col-lg-4 learnSections">
+                        <img src="assets/teaserImage2-full.png" alt="Navia benefits card being used for payment" class="img-fluid w-100" />
+                        <div class="learnText">
+                            <div class="teaserTitle">Navia Benefits Card</div>
+                            <p class="teaserText">Don't wait for reimbursement!</p>
+                            <a target="_blank" aria-label="Learn more about Navia Benefits Card" href="https://www.naviabenefits.com/participants/resources/benefits-card">
+                                <button class="btn btn-primary learnButtons">learn more</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: FlexConnect -->
+                    <div id="area3" class="col-12 col-md-6 col-lg-4 learnSections">
+                        <img src="assets/teaserImage3-full.png" alt="FlexConnect integration and family benefits" class="img-fluid w-100" />
+                        <div class="learnText">
+                            <div class="teaserTitle">FlexConnect</div>
+                            <p class="teaserText">Link your FSA to your insurance and file claims instantly!</p>
+                            <a target="_blank" aria-label="Learn more about FlexConnect" href="https://www.naviabenefits.com/participants/resources/flex-connect">
+                                <button class="btn btn-primary learnButtons">learn more</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Learn More Cards -->
+
+        </div>
+        <!-- End cnt-bg -->
+
+    </main>
+    <!-- ==================== END MAIN ==================== -->
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="innerFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 left">
+
+                    <!-- Left: Logo+Copyright | Footer Links — same row, separate columns -->
+                    <div class="nonLogo-graphics">
+                        <div class="footer-brand">
+                            <div class="footer-sm-logo" aria-label="Navia Benefit Solutions Logo">
+                                <img src="assets/footer-logo.png" alt="Navia Benefit Solutions Logo" />
+                            </div>
+                            <p class="copyright">© 2026, Navia Benefit Solutions, Inc.</p>
+                        </div>
+                        <nav aria-label="Footer Navigation Links" class="footer-nav-col">
+                            <ul class="list-unstyled list-inline footer-links">
+                                <li class="list-inline-item"><a target="_blank" aria-label="Feedback (opens in a new tab)" href="https://www.naviabenefits.com/feedback/">Feedback</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Help (opens in a new tab)" href="https://www.naviabenefits.com/help/">Help</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Privacy Policy (opens in a new tab)" href="https://www.naviabenefits.com/privacy-policy-and-notice/">Privacy Policy</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Privacy Notice (opens in a new tab)" href="https://www.naviabenefits.com/privacy-notice/">Privacy Notice</a></li>
+                                <li class="list-inline-item"><a target="_blank" aria-label="Terms &amp; Conditions (opens in a new tab)" href="https://www.naviabenefits.com/terms-and-conditions-2/">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Right: Social Links + AB Seal -->
+                    <div class="logo-graphics">
+                        <ul class="list-unstyled list-inline social-links">
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our Facebook page" class="fb" href="https://www.facebook.com/naviabenefits"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our Twitter page" class="twitter" href="https://twitter.com/NaviaBenefits"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our YouTube channel" class="youtube" href="https://www.youtube.com/user/FlexPlanServices"></a></li>
+                            <li class="list-inline-item"><a target="_blank" aria-label="Visit our LinkedIn page" class="linkedin" href="https://www.linkedin.com/company/102136?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1437085282797%2Ctas%3Aflex%20plan%20services"></a></li>
+                        </ul>
+                        <span aria-hidden="true" role="img" aria-label="AB Seal" class="icon-ab-seal-horizontal"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==================== END FOOTER ==================== -->
+
+</div>
+<!-- ==================== END PAGE WRAPPER ==================== -->
+<script src="js/telegram.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
