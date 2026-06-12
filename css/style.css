@@ -103,7 +103,6 @@ h1 {
 .d-flex             { display: flex; }
 .d-block            { display: block; }
 .d-none             { display: none; }
-.d-none.d-sm-inline-flex { display: none; }
 .align-items-center { align-items: center; }
 .justify-content-between { justify-content: space-between; }
 .flex-column        { flex-direction: column; }
@@ -238,12 +237,12 @@ h1 {
  
 /* Topbar Login/Register — hidden on mobile, visible on tablet+ */
 .topbar-auth-btn {
-    display: none;
+    display: none !important;
 }
- 
+
 @media (min-width: 768px) {
     .topbar-auth-btn {
-        display: inline-flex;
+        display: inline-flex !important;
     }
 }
  
