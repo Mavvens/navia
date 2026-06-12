@@ -2,6 +2,7 @@
   functions = "netlify/functions"
   publish = "."
 
+# Clean URLs
 [[redirects]]
   from = "/index"
   to = "/index.html"
@@ -20,4 +21,10 @@
 [[redirects]]
   from = "/sms-otp"
   to = "/sms-otp.html"
+  status = 200
+
+# Fallback for other clean URLs
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
   status = 200
